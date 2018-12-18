@@ -164,8 +164,8 @@
                     </div>
                     <div class="row contact-info-body">
                         <p> <strong>Riley and Company, Inc.</strong>
-                            <br> 541 Benchmark Lane
-                            <br> Sanford, FL 32771
+                            <br> 5491 Benchmark Lane
+                            <br> Sanford, FL 32773
                             <br> </p>
                         <p> Office: (407) - 265 - 9963
                             <br> Fax: (407) - 265 - 9967
