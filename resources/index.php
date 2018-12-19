@@ -133,25 +133,25 @@
             <legend class="margin-bottom-10">What describes you best?</legend>
               <label for="worked" class="custom-error">This field is required</label>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="worked" id="Engineer" value="Engineer" required>
+                  <input class="form-check-input" type="radio" name="worked" id="Engineer" value="Engineer" >
                   <label class="form-check-label" for="Engineer">
                     Engineer
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="worked" id="Contractor" value="Contractor" required>
+                  <input class="form-check-input" type="radio" name="worked" id="Contractor" value="Contractor" >
                   <label class="form-check-label" for="Contractor">
                     Contractor
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="worked" id="Building Owner/Manager" value="Building Owner/Manager" required>
+                  <input class="form-check-input" type="radio" name="worked" id="Building Owner/Manager" value="Building Owner/Manager" >
                   <label class="form-check-label" for="Building Owner/Manager">
                       Building Owner/Manager
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="worked" id="Developer" value="Developer" required>
+                  <input class="form-check-input" type="radio" name="worked" id="Developer" value="Developer" >
                   <label class="form-check-label" for="Developer">
                       Developer
                   </label>

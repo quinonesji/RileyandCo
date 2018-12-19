@@ -5,6 +5,7 @@ $(document).ready(function() {
          fname: "required",
          lname: "required",
          pname: "required",
+         worked: "required",
          plocation: "required",
          pdetails1: "required",
          pdetails2: "required",
