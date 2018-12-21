@@ -133,25 +133,25 @@
             <legend class="margin-bottom-10">What describes you best?</legend>
               <label for="worked" class="custom-error">This field is required</label>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="worked" id="Engineer" value="Engineer" >
+                  <input class="form-check-input" type="radio" name="worked" id="Engineer" value="Engineer" required>
                   <label class="form-check-label" for="Engineer">
                     Engineer
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="worked" id="Contractor" value="Contractor" >
+                  <input class="form-check-input" type="radio" name="worked" id="Contractor" value="Contractor" required>
                   <label class="form-check-label" for="Contractor">
                     Contractor
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="worked" id="Building Owner/Manager" value="Building Owner/Manager" >
+                  <input class="form-check-input" type="radio" name="worked" id="Building Owner/Manager" value="Building Owner/Manager" required>
                   <label class="form-check-label" for="Building Owner/Manager">
                       Building Owner/Manager
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="worked" id="Developer" value="Developer" >
+                  <input class="form-check-input" type="radio" name="worked" id="Developer" value="Developer" required>
                   <label class="form-check-label" for="Developer">
                       Developer
                   </label>
@@ -270,7 +270,6 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/script-validate.js">
-
     </script>
 </body>
 

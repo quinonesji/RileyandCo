@@ -58,7 +58,7 @@ $(document).ready(function() {
           }
       },
       submitHandler: function(form) {
-		  const data = formToJSON(form.elements);
+		        const data = formToJSON(form.elements);
 	      	  data.worked = $('input[name=worked]:checked').val();
            $.ajax({
                type: "POST",
