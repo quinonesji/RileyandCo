@@ -5,7 +5,6 @@ $(document).ready(function() {
          fname: "required",
          lname: "required",
          pname: "required",
-         worked: "required",
          plocation: "required",
          pdetails1: "required",
          pdetails2: "required",
@@ -60,6 +59,7 @@ $(document).ready(function() {
       },
       submitHandler: function(form) {
 		  const data = formToJSON(form.elements);
+	      	  data.worked = $('input[name=worked]:checked').val();
            $.ajax({
                type: "POST",
                url: "https://rileyandcoemailapp.herokuapp.com/sendEmail",
