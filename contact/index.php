@@ -155,7 +155,7 @@
                             <input type="text" class="form-control" id="needs" name="needs"> </div>
                             <div class="g-recaptcha" data-sitekey="6Lev14EUAAAAANwrWVUGu34pxWvr4SaS3E40XsoT"></div>
                 <input type="submit" id="submit" name="submit" value="Submit" class="btn-sign-up">
-                 <input type="hidden" name="generalcontact">
+                 <input type="hidden" name="generalcontact" value="contactform">
               </form>
             </div>
             <div class="col-lg-4 contact-info">

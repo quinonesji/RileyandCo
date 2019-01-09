@@ -218,7 +218,7 @@
               </div>
               <div class="row">
                 <div class="col-6">
-                  <label class="margin-bottom-10 margin-top-20" for="fileId">Please attach the site plan:</label>
+                  <label class="margin-bottom-10 margin-top-20" for="fileId">Please attach the site plan in PDF format:</label>
                   <input type="file" class="form-control" name="file" id="fileId">
                 </div>
               </div>
@@ -271,6 +271,7 @@
     <!-- <script src="../scripts/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="../scripts/bootstrap4.min.js"></script>
+    <script src="../scripts/axios.js"></script>
     <!-- <script src="/scripts/jquery-ui.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
