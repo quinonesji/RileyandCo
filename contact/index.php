@@ -153,7 +153,7 @@
                             <div class="form-group">
                             <label class="margin-bottom-10" for="needs">Tell us about your needs:</label>
                             <input type="text" class="form-control" id="needs" name="needs"> </div>
-                            <div class="g-recaptcha" data-sitekey="6Lev14EUAAAAANwrWVUGu34pxWvr4SaS3E40XsoT"></div>
+                            <div class="g-recaptcha" data-sitekey="6LdR0k4UAAAAADEYeU1BNd3MS_Tn2vvKlX6T8GGP"></div>
                 <input type="submit" id="submit" name="submit" value="Submit" class="btn-sign-up">
                  <input type="hidden" name="generalcontact" value="contactform">
               </form>

@@ -224,7 +224,7 @@
               </div>
               <small class="form-text text-muted margin-bottom-10 margin-top-20">
                 Any questions, give me a call at 407-265-9963</small>
-                <div class="g-recaptcha" data-sitekey="6Lev14EUAAAAANwrWVUGu34pxWvr4SaS3E40XsoT"></div>
+                <div class="g-recaptcha" data-sitekey="6LdR0k4UAAAAADEYeU1BNd3MS_Tn2vvKlX6T8GGP"></div>
     <input type="submit" id="submit" name="submit" value="Submit" class="btn-sign-up">
      <input type="hidden" name="designapplication" value="designform">
         </form>
