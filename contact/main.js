@@ -55,10 +55,7 @@ $(document).ready(function(){
                 $("#ShowCity").css("display", "none");
             }
     });
-  //   jQuery.validator.addMethod("checkIfZero", function(value, element) {
-  //   return this.optional(element) || (value === '');
-  // }, "Must Select a Country.");
-
+  
     $("#FormId").validate({
       errorClass: 'custom-error',
       rules: {
@@ -132,48 +129,47 @@ $(document).ready(function(){
 
     // console.log(jstr.fname);
     // console.log(jstr.desc);
-    // console.log(JSON.stringify(jstr));
-             $.ajax({
-                 type: "POST",
-                 url: "https://rileyandcoemailapp.herokuapp.com/sendEmail",
-                 data: JSON.stringify(jstr),
-                 dataType: "json",
-                 crossDomain:true,
-                 contentType:"application/json;charset=utf-8",
-                 cache: false,
-                 success: function (data) {
-                   if(data.resultCode === 0) {
-                     document.getElementById("FormId").reset();
-                     grecaptcha.reset();
-                     $("#server-error").css("display", "none");
-                     $("#error-list-items").html("");
-                     $('html, body').animate({ scrollTop: 0 }, 'slow');
-                     $("#server-success").css("display", "block");
-                }
+    //console.log(JSON.stringify(jstr));
+    //https://rileyandcoemailapp.herokuapp.com/sendEmail
+    $.ajax({
+      url:"https://rileyandcoemailapp.herokuapp.com/sendEmail",
+      type: "POST",
+      dataType: "json",
+      contentType:"application/json;charset=utf-8",
+      data: JSON.stringify(jstr),
+      success: function(data) {
+          if(data.resultCode === 0) {
+                  document.getElementById("FormId").reset();
+                  grecaptcha.reset();
+                  $("#server-error").css("display", "none");
+                  $("#error-list-items").html("");
+                  $('html, body').animate({ scrollTop: 0 }, 'slow');
+                  $("#server-success").css("display", "block");
+            }
 
-                if(data.resultCode === 1) {
-                  // document.getElementById("FormId").reset();
-                  // grecaptcha.reset();
+            if(data.resultCode === 1) {
+              // document.getElementById("FormId").reset();
+              // grecaptcha.reset();
+              $('html, body').animate({ scrollTop: 0 }, 'slow');
+              $("#server-error").css("display", "block");
+              $("#error-list-items").html("");
+              $("#error-list-items").append("<li>" + data.responseDesc + "</li>");
+            }
+              }, error: function(error, err, e) {
+                  // think of something clever to print to user as a friendly error message
+                  //advising the user to contact Carter's Lawn Service Company.
+                  document.getElementById("FormId").reset();
+                  grecaptcha.reset();
+                  $("#server-error").css("display", "none");
+                  $("#error-list-items").html("");
                   $('html, body').animate({ scrollTop: 0 }, 'slow');
                   $("#server-error").css("display", "block");
-                  $("#error-list-items").html("");
-                  $("#error-list-items").append("<li>" + data.responseDesc + "</li>");
-                }
-                 }, error: function(error, err, e) {
-                     // think of something clever to print to user as a friendly error message
-                     //advising the user to contact Carter's Lawn Service Company.
-                     document.getElementById("FormId").reset();
-                     grecaptcha.reset();
-		                 $("#server-error").css("display", "none");
-                     $("#error-list-items").html("");
-                     $('html, body').animate({ scrollTop: 0 }, 'slow');
-                     $("#server-error").css("display", "block");
-                     $("#server-error").append("We appologize for the inconvience, please contact <a href='mailto:g.velez@rileyandco.com;l.riley@rileyandco.com;d.burns@rileyandco.com'>support</a> for help with request.");
-                 }
-             });
-             return false; // required to block normal submit since you used ajax
-        }
-    });
+                  $("#server-error").append("We appologize for the inconvience, please contact <a href='mailto:g.velez@rileyandco.com;l.riley@rileyandco.com;d.burns@rileyandco.com'>support</a> for help with request.");
+              }
+      });
+          return false; // required to block normal submit since you used ajax
+  }
+});
 const formToJSON = elements => [].reduce.call(elements, (data, element) => {
 
   data[element.name] = element.value;

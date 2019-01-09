@@ -216,6 +216,12 @@
                   <input type="text" class="form-control" name="pdetails10">
                 </div>
               </div>
+              <div class="row">
+                <div class="col-6">
+                  <label class="margin-bottom-10 margin-top-20" for="fileId">Please attach the site plan:</label>
+                  <input type="file" class="form-control" name="file" id="fileId">
+                </div>
+              </div>
               <small class="form-text text-muted margin-bottom-10 margin-top-20">
                 Any questions, give me a call at 407-265-9963</small>
                 <div class="g-recaptcha" data-sitekey="6Lev14EUAAAAANwrWVUGu34pxWvr4SaS3E40XsoT"></div>
